@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWEC - Tarea Tema 2 - Navegadores</title>
+    <!-- Con esta línea tu página cargará el Bootstrap que te acabas de descargar -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- Barra de navegación común -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- NOMBRE REAL -->
+            <a class="navbar-brand" href="#">Samuel Palacios Olmo</a>
+            <div class="navbar-nav">
+                <a class="nav-link active" href="index.html">Navegadores</a>
+                <a class="nav-link" href="interaccion.html">Interacción</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4 text-center">Estudio de Navegadores y Motores</h2>
+                
+                <!-- Tabla Responsiva de Bootstrap con los datos correctos del tema -->
+                <div class="table-responsive shadow-sm bg-white rounded p-3 mb-4">
+                    <table class="table table-striped table-hover align-middle mb-0">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Navegador</th>
+                                <th>Empresa</th>
+                                <th>Motor Renderizado</th>
+                                <th>Motor JavaScript</th>
+                                <th>¿Basado en Chromium?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Chrome</strong></td>
+                                <td>Google</td>
+                                <td>Blink</td>
+                                <td>V8</td>
+                                <td>Sí</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Firefox</strong></td>
+                                <td>Mozilla</td>
+                                <td>Gecko</td>
+                                <td>SpiderMonkey</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Safari</strong></td>
+                                <td>Apple</td>
+                                <td>WebKit</td>
+                                <td>JavaScriptCore (Nitro)</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Edge</strong></td>
+                                <td>Microsoft</td>
+                                <td>Blink</td>
+                                <td>V8</td>
+                                <td>Sí</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Opera</strong></td>
+                                <td>Opera Software</td>
+                                <td>Blink</td>
+                                <td>V8</td>
+                                <td>Sí</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Tarjeta con el ejemplo de Can I Use -->
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="mb-0">Ejemplo de Incompatibilidad (CanIUse)</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <strong>Característica:</strong> Elemento HTML <code>&lt;dialog&gt;</code>.<br>
+                            <strong>Fallo / Limitación:</strong> Aunque está soportado hoy en día, versiones anteriores a Safari 15.4 o navegadores antiguos de Android no lo reconocían nativamente, rompiendo ventanas modales sin un parche de código.<br>
+                            <strong>Enlace de consulta:</strong> <a href="https://caniuse.com" target="_blank">://caniuse.com</a><br>
+                            <strong>Fecha de consulta:</strong> 2 de octubre de 2026.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>

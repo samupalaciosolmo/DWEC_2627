@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWEC - Tarea Tema 2 - Interacción</title>
+     <!-- Con esta línea tu página cargará el Bootstrap que te acabas de descargar -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- Barra de navegación común -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- NOMBRE REAL -->
+            <a class="navbar-brand" href="#">Samuel Palacios Olmo</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Navegadores</a>
+                <a class="nav-link active" href="interaccion.html">Interacción</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal responsivo -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                
+                <!-- Tarjeta de Bootstrap que agrupa los botones -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h5 class="mb-0">Pruebas de Interacción con JavaScript</h5>
+                    </div>
+                    <div class="card-body text-center d-grid gap-3">
+                        <p class="card-text text-muted">Haz clic en cada botón para probar las diferentes interacciones de la práctica.</p>
+                        
+                        <!-- Botón 1: Saludar -->
+                        <button type="button" class="btn btn-success btn-lg" onclick="saludar()">
+                            Saludar
+                        </button>
+                        
+                        <!-- Botón 2: Simular Error -->
+                        <button type="button" class="btn btn-danger btn-lg" onclick="simularError()">
+                            Simular un error
+                        </button>
+                        
+                        <!-- Botón 3: Detectar Navegador -->
+                        <button type="button" class="btn btn-info text-white btn-lg" onclick="detectarNavegador()">
+                            ¿Qué navegador soy?
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- JS de Bootstrap y vinculación de tu app.js al final del body -->
+    <script src="https://jsdelivr.net"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
